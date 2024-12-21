@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Panel de Usuario</title>
+  <link rel="icon" href="../image/pago-con-tarjetas-de-credito.png" type="image/x-icon">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/style_credit.css">
+</head>
+<body>
+  <center>
+  <div id="login-form">
+    <h1 class="soli">solicitud de prestamo</h1>
+  <h4>motivo del prestamo:</h4>
+  <input type="text" id="text" placeholder="motivo del prestamo" >
+  <h4>monto del prestamo</h4>
+  <input type="number" id="monto" placeholder="monto del prestamo">
+  <h4>correo de tu cuenta:</h4>
+  <input type="email" id="email" placeholder="correo del prestamista">
+  <h4>tarjeta de preferencia:</h4>
+<select id="metodoPago">
+  <option value="tarjeta">Tarjeta de crédito</option>
+  <option value="debito">Tarjeta de débito</option>
+</select>
+<br>
+<button onclick="realizarPago()">Realizar pago</button>
+<p>Saldo actual: <span id="saldo">100000</span></p> 
+
+</div>
+  <script src="../script/credito.js"></script>
+</center>
+</body>
+</html>

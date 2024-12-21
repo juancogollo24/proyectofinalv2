@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Panel de Usuario</title>
+  <link rel="icon" href="../image/pago-con-tarjetas-de-credito.png" type="image/x-icon">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <center>
+  <div id="login-form">
+    <h1>Transferencia</h1>
+  <input type="email" id="email" placeholder="correo del remitente" requerid>
+  <input type="number" id="monto" placeholder="Monto a enviar">
+<select id="metodoPago">
+  <option value="tarjeta">Tarjeta de crédito</option>
+  <option value="debito">Tarjeta de débito</option>
+</select>
+<button onclick="realizarPago()">Realizar pago</button>
+<p>Saldo actual: <span id="saldo">100000</span></p> 
+
+  
+  <script src="../script/pago.js"></script>
+</div>
+</center>
+</body>
+</html>
